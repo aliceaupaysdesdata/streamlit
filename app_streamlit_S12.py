@@ -7,9 +7,9 @@ from streamlit_authenticator import Authenticate
 
 # Nos données utilisateurs doivent respecter ce format
 
-lesDonneesDesComptes = {'usernames': {'utilisateur': {'name': 'utilisateur',
-    'password': 'utilisateurMDP',
-    'email': 'utilisateur@gmail.com',
+lesDonneesDesComptes = {'usernames': {'utilisateur': {'name': 'alice',
+    'password': 'abracadabra',
+    'email': 'alice.gontier94@gmail.com',
     'failed_login_attemps': 0, # Sera géré automatiquement
     'logged_in': False, # Sera géré automatiquement
     'role': 'utilisateur'},
