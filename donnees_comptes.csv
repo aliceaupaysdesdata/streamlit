@@ -1,0 +1,3 @@
+name; password; email; failed_login_attemps; logged_in;role
+alice;abracadabra;alice.gontier94@gmail.com;;;utilisateur
+root;rootMDP;admin@gmail.com;;;administrateur

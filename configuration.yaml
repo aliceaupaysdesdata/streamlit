@@ -1,0 +1,29 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key # Must be a string
+  name: some_cookie_name
+credentials:
+  usernames:
+    agontier:
+      email: alice.gontier94@gmail.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Alice Gontier
+      password: abracadabra # Will be hashed automatically
+      roles:
+      - admin
+      - editor
+      - viewer
+oauth2:
+  google: # Follow instructions: https://developers.google.com/identity/protocols/oauth2
+    client_id: # To be filled
+    client_secret: # To be filled
+    redirect_uri: # URL to redirect to after OAuth2 authentication
+  microsoft: # Follow instructions: https://learn.microsoft.com/en-us/graph/auth-register-app-v2
+    client_id: # To be filled
+    client_secret: # To be filled
+    redirect_uri: # URL to redirect to after OAuth2 authentication
+    tenant_id: # To be filled
+pre-authorized:
+  emails:
+  - alice.gontier94@gmail.com
