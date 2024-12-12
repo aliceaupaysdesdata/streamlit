@@ -34,13 +34,12 @@ authenticator = Authenticate(
 authenticator.login()
 
 def accueil():
-      st.title("Bienvenu sur le contenu réservé aux utilisateurs connectés")
-
+    st.title("Bienvenu sur le contenu réservé aux utilisateurs connectés")
 
 if st.session_state["authentication_status"]:
-  accueil()
-  # Le bouton de déconnexion
-  authenticator.logout("Déconnexion")
+    accueil()
+    # Le bouton de déconnexion
+    authenticator.logout("Déconnexion")
 
 elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
