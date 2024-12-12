@@ -1,6 +1,3 @@
-
-
-
 # Import des modules et bibliothèques nécessaires :
 
 import streamlit as st
@@ -11,17 +8,17 @@ from streamlit_authenticator import Authenticate
 # Nos données utilisateurs doivent respecter ce format
 
 lesDonneesDesComptes = {'usernames': {'utilisateur': {'name': 'utilisateur',
-   'password': 'utilisateurMDP',
-   'email': 'utilisateur@gmail.com',
-   'failed_login_attemps': 0, # Sera géré automatiquement
-   'logged_in': False, # Sera géré automatiquement
-   'role': 'utilisateur'},
-  'root': {'name': 'root',
-   'password': 'rootMDP',
-   'email': 'admin@gmail.com',
-   'failed_login_attemps': 0, # Sera géré automatiquement
-   'logged_in': False, # Sera géré automatiquement
-   'role': 'administrateur'}}}
+    'password': 'utilisateurMDP',
+    'email': 'utilisateur@gmail.com',
+    'failed_login_attemps': 0, # Sera géré automatiquement
+    'logged_in': False, # Sera géré automatiquement
+    'role': 'utilisateur'},
+    'root': {'name': 'root',
+    'password': 'rootMDP',
+    'email': 'admin@gmail.com',
+    'failed_login_attemps': 0, # Sera géré automatiquement
+    'logged_in': False, # Sera géré automatiquement
+    'role': 'administrateur'}}}
 
 
 authenticator = Authenticate(
